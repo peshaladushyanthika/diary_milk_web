@@ -1,0 +1,301 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Cow Milking System</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 33px 9%;
+}
+/* body{
+    background: lightgray;
+} */
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left:60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+/* .bg-image{
+    background-image: url("bc_auto_x2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
+.intro{
+    /* height: 100vh; */
+    width: 100%;
+    min-height: 80vh;
+    /* background-image: url("background.jpg"); */
+    position: relative;
+    display: grid;
+    background-repeat: no-repeat;
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    gap: 2rem;
+    /* background-image: linear-gradient(135deg, #c7b198, #6a4f37); */
+    background-image: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    /* background-color: linear-gradient(rgba(4, 48, 4, 0.521),rgba(6, 72, 6, 0.521)); */
+}
+section{
+    padding: 0 19%;
+}
+.intro-text{
+    padding-bottom: 80px;
+    justify-content: center;
+    text-align: center;
+    /* position: absolute; */
+    /* padding-left: 900px; */
+    /* float: right; */
+}
+.intro-text h1,h4,h5,P{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.intro-text h1{
+    font-size: 65px;
+    padding-bottom: 30px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 50px;
+}
+.intro-text h4{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.intro-text h5 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.intro-text p {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.intro-text a{
+    color: white;
+    background: #133917;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 15px 30px;
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+.intro-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: black;
+
+}
+
+@media (max-width:1496px){
+    .intro-text{
+        padding-top: 30px;
+    }
+}
+@media (max-width:1000px) {
+    .intro-text {
+        padding-top: 60px;
+    }
+}
+@media (max-width:780px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        height: 40vh;
+        background-color: #113517;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+    .navlist a:hover {
+        border-bottom: 2px solid white;
+        }
+}
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    /* Adjust this value as needed for the minimum column width */
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: lightgray;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+  </style> 
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">RoBovine</a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="tech.html">Existing Tech</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="intro">
+        <!-- <div class="bg-image"></div> -->
+        
+        <!-- <div class="intro-img">
+            <img src="background_auto_x2.jpg" alt="cow">
+        </div> -->
+        <div class="intro-text">
+            <h1>RoBovine</h1>
+            <h4>“Making the world a better place, One cow at a time”</h4>
+            <h5>Humans have been milking cows for over 8,000 years.</h5>
+            <p>We think it's about time to make the milking process more productive for farmers, more
+                comfortable for cows, and more environmentally friendly for the planet.</p>
+                <a href="#">Read More</a>
+        </div>
+
+    </section>
+
+    <section class="background" style="background-color: white;">
+        <div class="back-info">
+            <h1 style="text-align: center;margin-top: 30px;font-size: 30px;padding-bottom: 30px;">Background</h1>
+            <p style="font-size:16px;">Did you know that Humans have been milking cows for more than 8,000 years?
+            
+            Although dairy processing and dairy storage have seen significant technological
+            improvement, many parts of the milking procedure remain cumbersome,
+            labor-intensive, and resource inefficient.
+            
+            Outdated practices, inconsistent processes, and human error can result in lower milk
+            production, inferior milk quality, and increased animal disease rates.</p>
+        </div>
+        <div class="mission">
+            <h1 style="text-align: center;margin-top: 30px;font-size: 30px;padding-bottom: 30px;">Mission</h1>
+            <p >RoBovine has been designing and field-testing for the last two years and now has a
+            production-ready design.</p>
+        </div>
+        <div class="product">
+            <h1 style="text-align: center;margin-top: 30px;font-size: 30px;padding-bottom: 30px;">Product</h1>
+            <p>RoBovine seeks to improve the welfare of dairy farm owners, workers, and animals by
+                making the milking process more productive, efficient, hygienic, and environmentally
+                friendly.</p>
+        </div>
+        <div class="RME">
+            <h1 style="text-align: center;margin-top: 30px;font-size: 30px;padding-bottom: 30px;">Revolutionizing Milking Efficiency</h1>
+            <p>The RoBovine system will revolutionize the milking process by increasing farm
+            productivity, lowering milking costs, improving cow comfort and stress levels, and
+            reducing environmental impact.
+            
+            We think it's about time to make the milking process more productive for farmers, more
+            comfortable for cows, and more environmentally friendly for the planet.</p>
+        </div>
+
+    </section>
+    <section class="benefits">
+        <h1 style="text-align: center;margin-top: 30px;font-size: 30px;padding-bottom: 30px;">Benefits</h1>
+    </section>
+
+    <div class="container">
+        <div class="column">
+            <h4 style="padding-bottom: 20px;">Profitability</h4>
+            <h5 style="float:left;text-decoration: underline;">Farmer Profitability</h5><br>
+            <ul style="padding-top: 20px;">
+                <li>● Improved Milk flow</li>
+                <li>● Faster Milking times</li>
+                <li>● Reduced Milk bacteria levels</li>
+                <li>● Lower Chemical & Towel costs</li>
+                
+            </ul>
+        </div>
+        <div class="column">
+            <h4 style="padding-bottom: 20px;">Welfare</h4>
+            <h5 style="float:left;text-decoration: underline;">Animal Welfare</h5><br>
+            <ul style="padding-top: 20px;padding-bottom: 20px;">
+                <li>● Teat handling consistency</li>
+                <li>● Cow comfort & stress level</li>
+                <li>● Reduced bacterial infection rate</li>
+            
+            </ul>
+            <h5 style="float:left;text-decoration: underline;">Worker Welfare</h5><br>
+            <ul style="padding-top: 20px;">
+                <li>● Improved Milk flow</li>
+                <li>● Faster Milking times</li>
+                <li>● Reduced Milk bacteria levels</li>
+                <li>● Lower Chemical & Towel costs</li>
+            
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Environment</h4>
+            <ul style="padding-top: 20px;">
+                <li>● Less Chemical usage</li>
+                <li>● Less plastics from micro-fiber towels</li>
+                <li>● Less water usage from towel washing</li> 
+            </ul>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
