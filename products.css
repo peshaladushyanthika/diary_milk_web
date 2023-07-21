@@ -1,0 +1,147 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-image: url('bn2.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ .container {
+     max-width: 700px;
+     margin: 50px auto;
+     background-color: rgba(255, 255, 255, 0.8);
+     padding: 50px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     padding-left: 100px;
+     margin-top: 80px;
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ ul {
+     list-style-type: none;
+     padding: 0;
+     
+ }
+
+ .list li {
+     margin: 10px 0;
+    list-style: circle;
+ }
+
+ .demo {
+     text-align: center;
+     /* font-size: 30px; */
+     font-weight: 400;
+ }
+
+ .video {
+     margin-top: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .container a {
+     color: white;
+     background: gray;
+     border: 1px solid transparent;
+     text-transform: uppercase;
+     border-radius: 20px;
+     padding: 12px 30px;
+     text-align: center;
+     text-decoration: none;
+     margin-right: 5px;
+
+ }
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+     list-style: none;
+     text-decoration: none;
+ }
+
+ header {
+     position: fixed;
+     right: 0;
+     top: 0;
+     z-index: 1000;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: transparent;
+     padding: 33px 9%;
+ }
+
+ /* body {
+     background: gray;
+ } */
+
+ .logo {
+     font-size: 30px;
+     font-weight: 700;
+     color: white;
+ }
+
+ .navlist {
+     display: flex;
+ }
+
+ .navlist a {
+     color: white;
+     margin-left: 60px;
+     font-size: 15px;
+     font-weight: 600;
+     border-bottom: 2px solid transparent;
+     transition: all .55s ease;
+ }
+
+ .navlist a:hover {
+     border-bottom: 2px solid white;
+ }
+
+ #menu-icon {
+     color: black;
+     font-size: 35px;
+     z-index: 10001;
+     cursor: pointer;
+     display: none;
+ }
+
+ @media (max-width:780px) {
+     #menu-icon {
+         display: block;
+     }
+
+     .navlist {
+         position: absolute;
+         top: 100%;
+         right: 0;
+         width: 200px;
+         height: 40vh;
+         background-color: #113517;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         padding: 30px 20px;
+         transition: all .55s ease;
+     }
+
+     .navlist a {
+         display: block;
+         margin: 7px 0;
+         margin-left: 0;
+     }
+
+     .navlist a:hover {
+         border-bottom: 2px solid white;
+     }
+ }
